@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {"id": 1, "name": "Central Park", "latitude": 40.7851, "longitude": -73.9683, "is_charging_station": false},
+    {"id": 2, "name": "Times Square", "latitude": 40.7580, "longitude": -73.9855, "is_charging_station": true},
+    {"id": 3, "name": "Union Square", "latitude": 40.7359, "longitude": -73.9911, "is_charging_station": false},
+    {"id": 4, "name": "Brooklyn Bridge", "latitude": 40.7061, "longitude": -73.9969, "is_charging_station": true},
+    {"id": 5, "name": "Wall Street", "latitude": 40.7075, "longitude": -74.0113, "is_charging_station": false},
+    {"id": 6, "name": "Empire State", "latitude": 40.7488, "longitude": -73.9854, "is_charging_station": true},
+    {"id": 7, "name": "Chelsea Market", "latitude": 40.7424, "longitude": -74.0060, "is_charging_station": false},
+    {"id": 8, "name": "Battery Park", "latitude": 40.7033, "longitude": -74.0170, "is_charging_station": true}
+  ],
+  "edges": [
+    {"from": 1, "to": 2, "distance_km": 25},
+    {"from": 2, "to": 3, "distance_km": 12},
+    {"from": 3, "to": 4, "distance_km": 45},
+    {"from": 4, "to": 5, "distance_km": 28},
+    {"from": 5, "to": 8, "distance_km": 20},
+    {"from": 2, "to": 6, "distance_km": 8},
+    {"from": 6, "to": 7, "distance_km": 10},
+    {"from": 7, "to": 3, "distance_km": 6},
+    {"from": 6, "to": 1, "distance_km": 9},
+    {"from": 5, "to": 7, "distance_km": 19}
+  ],
+  "charging_stations": [
+    {"id": "CS1", "location": 2, "capacity": 4, "charging_rate_kw": 50, "avg_wait_time_min": 12},
+    {"id": "CS2", "location": 4, "capacity": 3, "charging_rate_kw": 60, "avg_wait_time_min": 8},
+    {"id": "CS3", "location": 6, "capacity": 5, "charging_rate_kw": 55, "avg_wait_time_min": 10},
+    {"id": "CS4", "location": 8, "capacity": 2, "charging_rate_kw": 45, "avg_wait_time_min": 15}
+  ],
+   "vehicles": [
+    {"id": "EV001", "current_location": 1, "battery_level": 75, "max_range_km": 150},
+    {"id": "EV002", "current_location": 3, "battery_level": 40, "max_range_km": 80},
+    {"id": "EV003", "current_location": 5, "battery_level": 20, "max_range_km": 50}
+  ],
+  "traffic": [
+    {"road": "1-2", "max_vehicles": 100, "current_flow": 70},
+    {"road": "2-3", "max_vehicles": 80, "current_flow": 65},
+    {"road": "3-4", "max_vehicles": 60, "current_flow": 55},
+    {"road": "4-5", "max_vehicles": 40, "current_flow": 30},
+    {"road": "5-8", "max_vehicles": 50, "current_flow": 45},
+    {"road": "6-7", "max_vehicles": 90, "current_flow": 50},
+    {"road": "2-6", "max_vehicles": 75, "current_flow": 60},
+    {"road": "7-3", "max_vehicles": 65, "current_flow": 40},
+    {"road": "6-1", "max_vehicles": 85, "current_flow": 70},
+    {"road": "5-7", "max_vehicles": 55, "current_flow": 35}
+  ]
+}
