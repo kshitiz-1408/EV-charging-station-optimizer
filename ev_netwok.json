@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {"id": 1, "name": "Central Park", "latitude": 40.7851, "longitude": -73.9683, "is_charging_station": false},
+    {"id": 2, "name": "Times Square", "latitude": 40.7580, "longitude": -73.9855, "is_charging_station": true},
+    {"id": 3, "name": "Union Square", "latitude": 40.7359, "longitude": -73.9911, "is_charging_station": false},
+    {"id": 4, "name": "Brooklyn Bridge", "latitude": 40.7061, "longitude": -73.9969, "is_charging_station": true},
+    {"id": 5, "name": "Wall Street", "latitude": 40.7075, "longitude": -74.0113, "is_charging_station": false},
+    {"id": 6, "name": "Empire State", "latitude": 40.7488, "longitude": -73.9854, "is_charging_station": true},
+    {"id": 7, "name": "Chelsea Market", "latitude": 40.7424, "longitude": -74.0060, "is_charging_station": false},
+    {"id": 8, "name": "Battery Park", "latitude": 40.7033, "longitude": -74.0170, "is_charging_station": true}
+  ],
+  "edges": [
+    {"from": 1, "to": 2, "distance_km": 15},
+    {"from": 2, "to": 3, "distance_km": 12},
+    {"from": 3, "to": 4, "distance_km": 5},
+    {"from": 4, "to": 5, "distance_km": 8},
+    {"from": 5, "to": 8, "distance_km": 11},
+    {"from": 2, "to": 6, "distance_km": 8},
+    {"from": 6, "to": 7, "distance_km": 10},
+    {"from": 7, "to": 3, "distance_km": 6},
+    {"from": 6, "to": 1, "distance_km": 9},
+    {"from": 5, "to": 7, "distance_km": 19}
+  ],
+  "charging_stations": [
+    {"id": "CS1", "location": 2, "capacity": 4, "charging_rate_kw": 50, "avg_wait_time_min": 12},
+    {"id": "CS2", "location": 4, "capacity": 3, "charging_rate_kw": 60, "avg_wait_time_min": 8},
+    {"id": "CS3", "location": 6, "capacity": 5, "charging_rate_kw": 55, "avg_wait_time_min": 10},
+    {"id": "CS4", "location": 8, "capacity": 2, "charging_rate_kw": 45, "avg_wait_time_min": 15}
+  ]
+}
